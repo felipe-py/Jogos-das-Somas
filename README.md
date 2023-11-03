@@ -20,25 +20,33 @@ Projeto de um jogo de tabuleiro simples, entitulado "Jogo das Somas" inspirado n
 </h3>
 
 <p align="justify">
-
 - O jogo é de tabuleiro e deve ser disputado entre dois jogadores: Jogador 1 e Jogador 2, utilizando um único tabuleiro, com ambos jogando ao mesmo tempo
+</p>
 
+<p align="justify">
 - O jogo pode ser jogado em dois níveis. No nível 1 o tabuleiro tem as dimensões 4x4, dividido em 4 seções, e no nível 2 o tabuleiro apresenta as dimensões 9x9, dividido em 9 seções.
+</p>
 
+<p align="justify">
 - Cada uma das seções do tabuleiro é preenchida aleatoriamente com números de 1 a 4 para o nível 1, e números de 1 a 9 para o nível 2, de forma que os números não se repitam em uma mesma seção.
+</p>
 
+<p align="justify">
 - O tabuleiro deve permanecer oculto aos jogadores. Respectivamente, "a um lado" de cada linha e "abaixo" de cada coluna são armazenados os valores de suas somas, além da soma da diagonal principal do tabuleiro (bônus), que também deve ser calculada. Os valores das somas das linhas e da colunas devem permanecer visíveis aos jogadores. A soma-bônus deve ficar escondida
+</p>
 
+<p align="justify">
 - A cada rodada, cada jogador escolhe uma seção do tabuleiro e um número a ter a posição revelada, e assim ocorre:
 
-    - Se o número revelado completar uma linha ou coluna do tabuleiro, o jogador acumula a soma daquela linha ou coluna à pontuação;
-    
-    - Se o número revelado completar uma linha e uma coluna ao mesmo tempo, ambas as somas são acrescidas à pontuação do jogador;
-    
-    - Se o número revelado completar a diagonal principal do tabuleiro, o jogador acumula o dobro do valor da soma da diagonal.
+- Se o número revelado completar uma linha ou coluna do tabuleiro, o jogador acumula a soma daquela linha ou coluna à pontuação;
 
+- Se o número revelado completar uma linha e uma coluna ao mesmo tempo, ambas as somas são acrescidas à pontuação do jogador;
+
+- Se o número revelado completar a diagonal principal do tabuleiro, o jogador acumula o dobro do valor da soma da diagonal.
+</p>
+
+<p align="justify">
 - Vence o jogador que tiver acumulado a maior pontuação após o tabuleiro ser todo revelado.
-
 </p>
 
 <h3 align="center">
