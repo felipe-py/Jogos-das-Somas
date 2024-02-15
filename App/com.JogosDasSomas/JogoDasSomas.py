@@ -147,61 +147,37 @@ def traduz_termos_secao(secao,escolha):
         proprio numero que representa a secao.
         #matrizes e listas estao guardadas em dicionarios#
     ''' 
+    armazena_jogo = {1:[secoes_dificilp1['secao1_dificil'],jogos_dificilp1['jogo1_dificil'],listas_aux_dificilp1['auxiliar_dificil1']],
+                     2:[secoes_dificilp1['secao2_dificil'],jogos_dificilp1['jogo2_dificil'],listas_aux_dificilp1['auxiliar_dificil2']],
+                     3:[secoes_dificilp1['secao3_dificil'],jogos_dificilp1['jogo3_dificil'],listas_aux_dificilp2['auxiliar_dificil3']],
+                     4:[secoes_dificilp2['secao4_dificil'],jogos_dificilp2['jogo4_dificil'],listas_aux_dificilp2['auxiliar_dificil4']],
+                     5:[secoes_dificilp2['secao5_dificil'],jogos_dificilp2['jogo5_dificil'],listas_aux_dificilp2['auxiliar_dificil5']],
+                     6:[secoes_dificilp2['secao6_dificil'],jogos_dificilp2['jogo6_dificil'],listas_aux_dificilp2['auxiliar_dificil6']],
+                     7:[secoes_dificilp3['secao7_dificil'],jogos_dificilp3['jogo7_dificil'],listas_aux_dificilp3['auxiliar_dificil7']],
+                     8:[secoes_dificilp3['secao8_dificil'],jogos_dificilp3['jogo8_dificil'],listas_aux_dificilp3['auxiliar_dificil8']],
+                     9:[secoes_dificilp3['secao9_dificil'],jogos_dificilp3['jogo9_dificil'],listas_aux_dificilp3['auxiliar_dificil9']]}
+    
+    armazena_jogo2 = {1:[secoes_faceis['secao1_facil'],jogo_facil['jogo1_facil'],listas_aux_dificilp1['auxiliar_facil1']],
+                     2:[secoes_faceis['secao2_facil'],jogo_facil['jogo2_facil'],listas_aux_dificilp1['auxiliar_facil2']],
+                     3:[secoes_faceis['secao3_facil'],jogo_facil['jogo3_facil'],listas_aux_dificilp1['auxiliar_facil3']],
+                     4:[secoes_faceis['secao4_facil'],jogo_facil['jogo4_facil'],listas_aux_dificilp1['auxiliar_facil4']]}
+    
     if escolha == '2':
-        if secao == 1:
-            se = secoes_dificilp1['secao1_dificil']
-            jogo = jogos_dificilp1['jogo1_dificil']
-            lista_auxiliar = listas_aux_dificilp1['auxiliar_dificil1']
-        elif secao == 2:
-            se = secoes_dificilp1['secao2_dificil']
-            jogo = jogos_dificilp1['jogo2_dificil']
-            lista_auxiliar = listas_aux_dificilp1['auxiliar_dificil2']
-        elif secao == 3:
-            se = secoes_dificilp1['secao3_dificil']
-            jogo = jogos_dificilp1['jogo3_dificil']
-            lista_auxiliar = listas_aux_dificilp2['auxiliar_dificil3']
-        elif secao == 4:
-            se = secoes_dificilp2['secao4_dificil']
-            jogo = jogos_dificilp2['jogo4_dificil']
-            lista_auxiliar = listas_aux_dificilp2['auxiliar_dificil4']
-        elif secao == 5:
-            se = secoes_dificilp2['secao5_dificil']
-            jogo = jogos_dificilp2['jogo5_dificil']
-            lista_auxiliar = listas_aux_dificilp2['auxiliar_dificil5']
-        elif secao == 6:
-            se = secoes_dificilp2['secao6_dificil']
-            jogo = jogos_dificilp2['jogo6_dificil']
-            lista_auxiliar = listas_aux_dificilp2['auxiliar_dificil6']
-        elif secao == 7:
-            se = secoes_dificilp3['secao7_dificil']
-            jogo = jogos_dificilp3['jogo7_dificil']
-            lista_auxiliar = listas_aux_dificilp3['auxiliar_dificil7']
-        elif secao == 8:
-            se = secoes_dificilp3['secao8_dificil']
-            jogo = jogos_dificilp3['jogo8_dificil']
-            lista_auxiliar = listas_aux_dificilp3['auxiliar_dificil8']
-        elif secao == 9:
-            se = secoes_dificilp3['secao9_dificil']
-            jogo = jogos_dificilp3['jogo9_dificil']
-            lista_auxiliar = listas_aux_dificilp3['auxiliar_dificil9']
+        for chave in armazena_jogo:
+            if chave == secao:
+                se = armazena_jogo[secao][0]
+                jogo = armazena_jogo[secao][1]
+                lista_auxiliar = armazena_jogo[secao][2]
+
         return se,jogo,lista_auxiliar,secao
+    
     elif escolha == '1':
-        if secao == 1:
-            se = secoes_faceis['secao1_facil']
-            jogo = jogo_facil['jogo1_facil']
-            lista_auxiliar = listas_aux_facil['auxiliar_facil1']
-        elif secao == 2:
-            se = secoes_faceis['secao2_facil']
-            jogo = jogo_facil['jogo2_facil']
-            lista_auxiliar = listas_aux_facil['auxiliar_facil2']
-        elif secao == 3:
-            se = secoes_faceis['secao3_facil']
-            jogo = jogo_facil['jogo3_facil']
-            lista_auxiliar = listas_aux_facil['auxiliar_facil3']
-        elif secao == 4:
-            se = secoes_faceis['secao4_facil']
-            jogo = jogo_facil['jogo4_facil']
-            lista_auxiliar = listas_aux_facil['auxiliar_facil4']
+        for chave in armazena_jogo2:
+            if chave == secao:
+                se = armazena_jogo[secao][0]
+                jogo = armazena_jogo[secao][1]
+                lista_auxiliar = armazena_jogo[secao][2]
+
         return se,jogo,lista_auxiliar,secao
 
 def escolha_num(tupla_traduzida,escolha):
